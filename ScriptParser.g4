@@ -108,6 +108,7 @@ logical_fct returns [ ast.Expression node ]
     | OP_NOT logical_fct { $node = new ast.expression.Unary($OP_NOT.text, $logical_fct.node); }
     | LPAR logical_fct RPAR { $node = new ast.expression.Parens($logical_fct.node); }
     | variable { $node = $variable.node; }
+    | num_expression { $node = $num_expression.node; }
     ;
 
 num_expression returns [ ast.Expression node ]
