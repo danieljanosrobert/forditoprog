@@ -226,4 +226,20 @@ if (i == 0) {
 } else {
     print(600);
 }
+print();
+while(1) {
+    switch(x) {
+        case 1:
+            print(1111);
+        case 2:
+            print(2222);
+        case 3:
+            print(3333);
+            break;
+        case 4:
+            print(4444);
+        default: print(2);
+    }
+    x = x+1;
+}
 
