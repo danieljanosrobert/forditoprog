@@ -1,4 +1,4 @@
-package ast.exception;
+package ast;
 
 public class ContinueException extends RuntimeException {
 }

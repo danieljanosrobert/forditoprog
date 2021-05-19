@@ -227,7 +227,7 @@ if (i == 0) {
     print(600);
 }
 print();
-i = 0
+i = 0;
 while(1) {
     switch(i) {
         case 1:

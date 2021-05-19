@@ -6,7 +6,7 @@ import ast.Statement;
 import ast.Value;
 import ast.statement.Sequence;
 
-import static ast.generator.Generate.tabulateStatements;
+import static ast.Generate.tabulateStatements;
 import static java.util.Objects.nonNull;
 
 public class If extends Statement {

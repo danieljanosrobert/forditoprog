@@ -4,10 +4,10 @@ import ast.Expression;
 import ast.Script;
 import ast.Statement;
 import ast.Value;
-import ast.generator.TabulableInterface;
+import ast.TabulableInterface;
 import ast.statement.Sequence;
 
-import static ast.generator.Generate.tabulateStatements;
+import static ast.Generate.tabulateStatements;
 
 public class Case extends Statement implements TabulableInterface {
     private Expression switchExpression;

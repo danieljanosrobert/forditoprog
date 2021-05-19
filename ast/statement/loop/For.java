@@ -3,14 +3,14 @@ package ast.statement.loop;
 import ast.Expression;
 import ast.Script;
 import ast.Statement;
-import ast.exception.BreakException;
-import ast.exception.ContinueException;
+import ast.BreakException;
+import ast.ContinueException;
 import ast.expression.Variable;
-import ast.generator.TabulableInterface;
+import ast.TabulableInterface;
 import ast.statement.Assign;
 import ast.statement.Sequence;
 
-import static ast.generator.Generate.tabulateStatements;
+import static ast.Generate.tabulateStatements;
 import static java.util.Objects.nonNull;
 
 public class For extends Statement implements TabulableInterface {

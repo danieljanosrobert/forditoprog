@@ -1,6 +1,5 @@
-package ast.generator;
+package ast;
 
-import ast.Statement;
 import ast.statement.conditional.Case;
 import ast.statement.conditional.If;
 import ast.statement.conditional.Switch;

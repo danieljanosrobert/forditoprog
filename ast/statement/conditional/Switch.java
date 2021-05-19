@@ -3,13 +3,13 @@ package ast.statement.conditional;
 import ast.Expression;
 import ast.Script;
 import ast.Statement;
-import ast.exception.BreakException;
-import ast.exception.ContinueException;
+import ast.BreakException;
+import ast.ContinueException;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static ast.generator.Generate.tabulateStatements;
+import static ast.Generate.tabulateStatements;
 import static java.util.Objects.nonNull;
 
 public class Switch extends Statement {

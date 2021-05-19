@@ -2,7 +2,7 @@ package ast.statement;
 
 import ast.Script;
 import ast.Statement;
-import ast.exception.ContinueException;
+import ast.ContinueException;
 
 public class Continue extends Statement {
     public Continue(Script script) {

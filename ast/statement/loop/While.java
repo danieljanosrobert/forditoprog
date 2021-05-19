@@ -3,12 +3,12 @@ package ast.statement.loop;
 import ast.Expression;
 import ast.Script;
 import ast.Statement;
-import ast.exception.BreakException;
-import ast.exception.ContinueException;
-import ast.generator.TabulableInterface;
+import ast.BreakException;
+import ast.ContinueException;
+import ast.TabulableInterface;
 import ast.statement.Sequence;
 
-import static ast.generator.Generate.tabulateStatements;
+import static ast.Generate.tabulateStatements;
 
 public class While extends Statement implements TabulableInterface {
     private Expression condition;

@@ -1,4 +1,4 @@
-package ast.generator;
+package ast;
 
 import ast.statement.Sequence;
 

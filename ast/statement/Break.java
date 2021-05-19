@@ -2,7 +2,7 @@ package ast.statement;
 
 import ast.Script;
 import ast.Statement;
-import ast.exception.BreakException;
+import ast.BreakException;
 
 public class Break extends Statement {
 
