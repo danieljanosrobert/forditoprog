@@ -30,28 +30,20 @@ print(TIME-starttime);
 
 *Windows környezeten ajánlott a futtatást WSL2 Ubuntu környezeten végrehajtani.*
 
-## Elökészületek
-
-Mappa létrehozása, ahol a futtatás történni fog, belépés a mappába
-
-```
-mkdir ../project-run
-```
-
 ## Fordítás
 
 ```
-rm -r ../project-run/*.class ; rm -r ../project-run/ast/*.class ; rm -r ../project-run/ast/*$*.java ; cp -a . ../project-run/ ; java -jar ../project-run/antlr.jar ../project-run/ScriptLexer.g4 ../project-run/ScriptParser.g4 ; javac -cp .:../project-run/antlr.jar ../project-run/*.java;
+java -jar antlr.jar ScriptLexer.g4 ScriptParser.g4;  javac -cp .:antlr.jar *.java ast/*.java
 ```
 
 ## Futtatás
 
 ```
-clear; java -cp "../project-run/antlr.jar:../project-run/" ScriptParser input.txt
+java -cp .:antlr.jar ScriptParser input.txt
 ```
 
 ## Script újragenerálása
 
 ```
-clear; java -cp "../project-run/antlr.jar:../project-run/" ScriptParser input.txt --generate
+java -cp .:antlr.jar ScriptParser input.txt --generate
 ```
