@@ -227,8 +227,9 @@ if (i == 0) {
     print(600);
 }
 print();
+i = 0
 while(1) {
-    switch(x) {
+    switch(i) {
         case 1:
             print(1111);
         case 2:
@@ -238,8 +239,10 @@ while(1) {
             break;
         case 4:
             print(4444);
-        default: print(2);
     }
-    x = x+1;
+    i = i+1;
+    if (i == 5) {
+        break;
+    }
 }
 
