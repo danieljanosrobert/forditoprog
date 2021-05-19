@@ -70,6 +70,12 @@ public class Switch extends Statement {
         stringBuilder.append(getHeader());
         caseStatements.forEach(statement -> stringBuilder.append(tabulateStatements(statement)));
         stringBuilder.append("}\n");
+        if (nonNull(defaultStatement)) {
+            stringBuilder.append("\t")
+                    .append("default:\n")
+                    .append("\t\t")
+                    .append(defaultStatement.toString());
+        }
         return stringBuilder.toString();
     }
 }

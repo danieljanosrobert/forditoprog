@@ -245,4 +245,11 @@ while(1) {
         break;
     }
 }
+switch(j) {
+    case 1:
+        print();
+        break;
+    default:
+        print();
+}
 
